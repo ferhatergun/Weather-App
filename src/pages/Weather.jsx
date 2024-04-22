@@ -144,12 +144,23 @@ export default function Weather() {
           </div>
         </div>
         <DayOfForecast weatherDays={weatherDays} />
+
+        {/* desktop back button */}
         <Link
           to="/"
-          className="absolute top-5 left-5 border border-gray-300 rounded-xl p-1
+          className="absolute max-sm:hidden top-5 left-5 border border-gray-300 rounded-xl p-1
         cursor-pointer"
         >
           <ArrowLeft size={32} color="white" />
+        </Link>
+
+        {/* mobile back button */}
+        <Link
+          to="/"
+          className="sm:hidden absolute  top-0 left-2 border border-gray-300 rounded-xl p-1
+        cursor-pointer"
+        >
+          <ArrowLeft size={25} color="white" />
         </Link>
       </div>
     );
