@@ -9,7 +9,7 @@
   font-family: 'Nunito', sans-serif;
 }
 .bg-image{
-  background-image: url("Background.png") ;
+  background-image: url("/public/background.png") !important;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
